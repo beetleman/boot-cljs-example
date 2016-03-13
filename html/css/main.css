@@ -3,16 +3,7 @@
 body { -webkit-animation: androidBugfix infinite 1s; }
 /* end workaround */
 
-body {
-    background-image: url('../img/bg.jpg');
-    text-align: center;
-}
-
-h1 {
-    color: yellowgreen;
-    text-decoration: underline;
-}
-
-p  {
-    color: gold;
+#app {
+  margin: auto;
+  width: 650px;
 }

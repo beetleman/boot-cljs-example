@@ -21,13 +21,11 @@
 (deftask auto-test []
   (merge-env! :resource-paths #{"test"})
   (comp (watch)
-        (speak)
         (test-cljs)))
 
 (deftask dev []
   (comp (serve :dir "target/")
         (watch)
-        (speak)
         (reload :on-jsload 'app.core/main)
         (cljs-repl)
         (cljs :source-map true :optimizations :none)))
